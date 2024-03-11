@@ -1,4 +1,4 @@
-package Problem3;
+package Problem3and4;
 
 public abstract class Shape {
     private String name;

@@ -1,4 +1,4 @@
-package Problem3;
+package Problem3and4;
 
 public class ShapeDemo {
     public static void main(String[] args) {
