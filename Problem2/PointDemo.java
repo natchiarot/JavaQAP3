@@ -1,5 +1,5 @@
 package Problem2;
-
+// Define a class named PointDemo to demonstrate the usage of Point and MovablePoint classes
 public class PointDemo {
     public static void main(String[] args) {
         // Testing Point class
@@ -26,6 +26,8 @@ public class PointDemo {
         System.out.println("X speed of MovablePoint 1: " + mPoint1.getxSpeed());
         System.out.println("Y speed of MovablePoint 1: " + mPoint1.getySpeed());
         mPoint1.setXY(8.0f, 9.0f);
+
+        // Moving MovablePoint 1
         mPoint1.setSpeed(3.0f, 4.0f);
         System.out.println("Updated Movable Point 1: " + mPoint1);
         mPoint1.move();
