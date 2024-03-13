@@ -22,6 +22,7 @@ public class ShapeDemo {
         // Iterate over the array of Scalable objects
         for (Scalable obj : objects) {
             System.out.println("Before scaling: " + obj);
+            System.out.println();
 
             // Scale the object
             obj.scale(scalingFactor);
