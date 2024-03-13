@@ -10,6 +10,7 @@ public class SchoolDemo {
         Student mary = new Student("Mary May", 16, "F", "HS12654", 3.8);
         System.out.println();
         System.out.println("Student: " + mary);
+        System.out.println(mary.getMyName() + " has a GPA of: " + mary.getMyGPA());
 
         // Creating a new Teacher object
         Teacher drMalik = new Teacher("Quarrat-Ul-Ain Malik", 36, "F", "Computer Science", 50000);
@@ -17,9 +18,12 @@ public class SchoolDemo {
         System.out.println("Teacher: " + drMalik);
 
         // Creating a new CollegeStudent object
-        CollegeStudent nat = new CollegeStudent("Natalina Chiarot", 19, "F", "UCB234", 4.0, "Computer Science", 2);
+        CollegeStudent nat = new CollegeStudent("Natalina Chiarot", 19, "F", "UCB234", 4.0, "Computer Science", 1);
         System.out.println();
         System.out.println("College Student: " + nat);
+        nat.setMyYear(2);
+        System.out.println("12 months later... " + nat);
+        System.out.println(nat.getMyName() + " is now in " + nat.getMyYear() + " of College.");
 
         System.out.println();
         

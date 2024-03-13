@@ -7,13 +7,17 @@ public class ShapeDemo {
         System.out.println();
         System.out.println(myCircle);
         System.out.println();
+        myCircle.setRadius(7.6);
+        System.out.println("myCircle after setting the radius to a new value:");
+        System.out.println(myCircle);
+        System.out.println();
         
         // Creating an Ellipse object
         Ellipse myEllipse = new Ellipse("Ellipse", 5.0, 7.0);
         System.out.println(myEllipse);
-        System.out.println();
         // Proof that the major axes by default has the larger number.
         System.out.println("The value of 'a' is: " + myEllipse.getMajorAxes());
+        System.out.println();
 
         // Creating another Ellipse object
         // Proof that the ellipse will do regular circle calculations when a and b are the same value.
@@ -26,15 +30,15 @@ public class ShapeDemo {
         System.out.println(myTriangle);
         System.out.println();
 
+        // Creating an Equilateral Triangle object
+        EquilateralTriangle myEquilateralTriangle = new EquilateralTriangle("Equilateral Triangle", 5, 5, 5);
+        System.out.println(myEquilateralTriangle);
+        System.out.println();
+
         // Creating another Triangle object
         // Proof of triangle condition validation working.
         Triangle secondTriangle = new Triangle("Triangle Two", 10.0, 2.0, 1.0);
         System.out.println(secondTriangle);
-        System.out.println();
-
-        // Creating an Equilateral Triangle object
-        EquilateralTriangle myEquilateralTriangle = new EquilateralTriangle("Equilateral Triangle", 5, 5, 5);
-        System.out.println(myEquilateralTriangle);
         System.out.println();
 
         // Creating another Equilateral Triangle object
