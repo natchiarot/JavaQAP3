@@ -13,6 +13,7 @@ public class Triangle extends Shape {
         side3 = c;
         } else {
             System.err.println("Error - Triangle condition was not met.");
+            System.exit(1);  // Terminate program with an error code
         }
     }
 
