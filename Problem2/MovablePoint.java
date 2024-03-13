@@ -14,9 +14,10 @@ public class MovablePoint extends Point {
         ySpeed = ys;
     }
 
-    // Default constructor with no parameters
+    // No argument constructor
     public MovablePoint() {
-
+        this.xSpeed = 0.0f;
+        this.ySpeed = 0.0f;
     }
 
     // Getters

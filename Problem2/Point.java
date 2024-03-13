@@ -11,9 +11,10 @@ public class Point {
         this.y = y;
     }
 
-    // Default constructor with no parameters
+    // No argument constructor
     public Point() {
-
+        this.x = 0.0f;
+        this.y = 0.0f;
     };
 
     // Getters
