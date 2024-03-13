@@ -1,10 +1,11 @@
 package Problem3;
-
+// Defining a class named Triangle that extends the Shape abstract class
 public class Triangle extends Shape {
     private double side1;
     private double side2;
     private double side3;
 
+    // Constructor for Triangle class
     public Triangle(String name, double a, double b, double c) {
         super(name);
         if (a + b > c && b + c > a && c + a > b) {
@@ -17,6 +18,7 @@ public class Triangle extends Shape {
         }
     }
 
+    // Getters
     @Override
     public String getName() {
         return super.getName();
@@ -34,6 +36,7 @@ public class Triangle extends Shape {
         return side3;
     }
 
+    // Setters
     public void setSide1(double side1) {
         this.side1 = side1;
     }
@@ -46,6 +49,7 @@ public class Triangle extends Shape {
         this.side3 = side3;
     }
 
+    // Override the computePerimeter method to calculate the perimeter of the triangle
     @Override
     public double computePerimeter() {
         double a = side1;
@@ -55,6 +59,7 @@ public class Triangle extends Shape {
         return(a + b + c);
     }
 
+    // Override the computeArea method to calculate the area of the triangle
     @Override
     public double computeArea() {
         double a = side1;

@@ -1,7 +1,6 @@
 package Problem4;
-
+// Defining a class named ShapeDemo to demonstrate the functionality of scaling objects
 public class ShapeDemo {
-
     public static void main(String[] args) {
         // Creating an array of Scalable objects
         Scalable[] objects = new Scalable[] {
@@ -20,9 +19,11 @@ public class ShapeDemo {
 
     // Overloaded main method to accept Scalable[] and scalingFactor as parameters
     public static void main(Scalable[] objects, double scalingFactor) {
+        // Iterate over the array of Scalable objects
         for (Scalable obj : objects) {
             System.out.println("Before scaling: " + obj);
 
+            // Scale the object
             obj.scale(scalingFactor);
 
             System.out.println("After scaling: " + obj);
